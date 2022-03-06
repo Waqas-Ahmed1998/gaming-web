@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat:wght@300;400&family=Poppins:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply text-xl lg:text-4xl text-[#167EE0] lg:text-white font-semibold pt-3 lg:leading-tight;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .note {
+    @apply text-base md:text-xl tracking-wide text-gray-600;
+  }
+}
+@layer components {
+  .btn-orange {
+    @apply text-white  xl:inline-grid px-4 py-2  xl:py-4 bg-[#FEA366] text-xl   xl:w-60  rounded-full xl:text-2xl;
+  }
+}
+@layer components {
+  .heading-primary {
+    @apply text-xl lg:text-4xl  font-semibold pt-3 lg:leading-tight;
+  }
+}
+@layer components {
+  .btn-blue {
+    @apply bg-[#167EE0];
+  }
+}
+@layer components {
+  .heading-secondary {
+    @apply text-xl xl:text-[1.7rem] leading-none font-semibold pt-3 lg:leading-tight;
+  }
+}
+@layer components {
+  .heading-blue {
+    @apply text-[#167EE0];
+  }
+}
+@layer components {
+  .words-gray {
+    @apply text-gray-600;
+  }
+}
+@layer components {
+  .card-width {
+    @apply relative w-[90%] mx-auto;
+  }
+}
+@layer components {
+  .long-card {
+    @apply relative w-[100%] mx-auto;
+  }
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f2f6ff;
+  overflow-x: hidden;
+}
+.popins {
+  font-family: 'Poppins', sans-serif;
+}
+.btn-contact {
+  box-shadow: 0px 25px 55px rgb(238 112 8 / 49%);
+}
+.change-fonts {
+  font-family: 'Changa', sans-serif;
+}
+h2 {
+  font-family: 'Changa', sans-serif;
+}
+.card-shadow {
+  box-shadow: 37.477px 87.4462px 149.908px rgb(27 49 66 / 13%);
+}
+.contact-background {
+  background-color: rgba(6, 6, 6, 45%);
+}
+.contact-image {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2022/01/photo-1615840287214-7ff58936c4cf.jpg);
+}
+.contact-color {
+  background-color: rgba(224, 126, 15, 0.6);
+}
+.header-image {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-bg.png);
+}
+.header-background {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/06/Vector-12.png);
+}
+.card2-image {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-bg.png);
+}
+.card3-image {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-3.png);
+}
+.advertising-image {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/escort-pattern.png);
+}
+.bg-arrow {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/rounded-pattern.png);
+}
+.campaign-line {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/pattern-bg-3.png);
+}
+.services-top {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-line-pattern.png);
+}
+.service-mid {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/m-s-2-line.png);
+}
+.caster-card {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-left-bg-1.png);
+}
+.caster-card-right {
+  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-right-bg.png);
 }
